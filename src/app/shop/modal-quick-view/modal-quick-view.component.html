@@ -1,0 +1,72 @@
+<div class="modal fade theme1" *ngFor="let product of products" [id]="'quick-view-'+product.idProduct" tabindex="-1" role="dialog">
+   <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                  aria-hidden="true">x</span></button>
+         </div>
+         <div class="modal-body">
+            <div class="row">
+               <div class="col-md-5 col-sm-12 col-xs-12 mb-lm-100px mb-sm-30px">
+                  <div class="product-sync-init mb-20">
+                     <div class="single-product">
+                        <div class="product-thumb">
+                           <img width="460" [src]="env.prefUrlImage+product.image" alt="product-thumb">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-7 col-sm-12 col-xs-12">
+                  <div class="product-details-content quickview-content">
+                     <h2>{{ product.name }}</h2>
+                     <p class="reference">Reference:<span>{{ product.idProduct }}</span></p>
+                     <div class="pro-details-rating-wrap">
+                        <div class="rating-product">
+                           <i class="ion-android-star"></i>
+                           <i class="ion-android-star"></i>
+                           <i class="ion-android-star"></i>
+                           <i class="ion-android-star"></i>
+                           <i class="ion-android-star"></i>
+                        </div>
+                        <span class="read-review"><a class="reviews" href="#">Read reviews (1)</a></span>
+                     </div>
+                     <div class="pricing-meta">
+                        <ul>
+                           <li class="old-price not-cut">€{{ product.price }}</li>
+                        </ul>
+                     </div>
+                     <p class="quickview-para">{{ product.description }}</p>
+                     <div class="pro-details-quality">
+                        <div class="cart-plus-minus">
+                           <input class="cart-plus-minus-box" type="text" name="qtybutton" value="1" />
+                        </div>
+                        <div class="pro-details-cart btn-hover">
+                           <a (click)="addCart(product)"> + Add To Cart</a>
+                        </div>
+                     </div>
+                     <div class="pro-details-social-info">
+                        <span>Share</span>
+                        <div class="social-info">
+                           <ul>
+                              <li>
+                                 <a href="#"><i class="ion-social-facebook"></i></a>
+                              </li>
+                              <li>
+                                 <a href="#"><i class="ion-social-twitter"></i></a>
+                              </li>
+                              <li>
+                                 <a href="#"><i class="ion-social-google"></i></a>
+                              </li>
+                              <li>
+                                 <a href="#"><i class="ion-social-instagram"></i></a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
