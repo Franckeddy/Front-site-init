@@ -1,0 +1,117 @@
+<app-header></app-header>
+<div class="breadcrumb-area">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+            <div class="breadcrumb-content">
+               <ul class="nav">
+                  <li><a href="index.html">Home</a></li>
+                  <li>Login / Register</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="my-account pt-80 pb-80">
+   <div class="container">
+      <div class="row">
+         <div class="col-12">
+            <h3 class="title text-capitalize mb-30 pb-25"> Log in to your account</h3>
+            <form class="log-in-form" [formGroup]="loginForm">
+               <div class="alert alert-danger text-center" role="alert" *ngIf="errorMessage">{{errorMessage}}</div>
+               <div class="form-group row">
+                  <label for="staticEmail" class="col-md-3 col-form-label">Email</label>
+                  <div class="col-md-6">
+                     <input formControlName="email" name="email" type="email" class="form-control" id="staticEmail">
+                  </div>
+               </div>
+               <div class="form-group row">
+                  <label for="inputPassword" class="col-md-3 col-form-label">Password</label>
+                  <div class="col-md-6">
+                     <div class="input-group mb-2 mr-sm-2">
+                        <input formControlName="password" name="password" type="password" class="form-control" id="inputPassword">
+                        <div class="input-group-prepend">
+                           <button type="button"
+                              class="input-group-text  theme-btn--dark1 btn--md show-password">show</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="form-group row pb-3 text-center">
+                  <div class="col-md-6 offset-md-3">
+                     <div class="login-form-links">
+                        <div class="sign-btn">
+                           <button (click)="onSubmit()" class="btn theme-btn--dark1 btn--md" [disabled]="loginForm.invalid">Sign in</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="form-group row text-center mb-0">
+                  <div class="col-12">
+                     <div class="border-top">
+                        <a href="/register" class="no-account">No account? Create one here</a>
+                     </div>
+                  </div>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+</div>
+<app-footer></app-footer>
+
+
+<!-- <div class="login-register-area mtb-60px">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-7 col-md-12 ml-auto mr-auto">
+            <div class="login-register-wrapper">
+               <div class="login-register-tab-list nav">
+                  <a class="active" data-toggle="tab" routerLink="/login">
+                     <h4>login</h4>
+                  </a>
+                  <a data-toggle="tab" routerLink="/register">
+                     <h4>register</h4>
+                  </a>
+               </div>
+               <div class="tab-content">
+                  <div id="lg1" class="tab-pane active">
+                     <div class="login-form-container">
+                        <div class="login-register-form">
+                           <form action="#" method="post" [formGroup]="loginForm">
+                              <input formControlName="email" name="email" required type="email" placeholder="Email" />
+                              <input formControlName="password" name="password" type="password" placeholder="Password" />
+                              <div class="button-box">
+                                 <div class="login-toggle-btn">
+                                    <input type="checkbox" />
+                                    <a class="flote-none" href="javascript:void(0)">Remember me</a>
+                                    <a href="#">Forgot Password?</a>
+                                 </div>
+                                 <button (click)="onSubmit()" type="submit" [disabled]="loginForm.invalid" ><span>Login</span></button>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="lg2" class="tab-pane">
+                     <div class="login-form-container">
+                        <div class="login-register-form">
+                           <form action="#" method="post">
+                              <input type="text" name="user-name" placeholder="Username" />
+                              <input type="password" name="user-password" placeholder="Password" />
+                              <input name="user-email" placeholder="Email" type="email" />
+                              <div class="button-box">
+                                 <button type="submit"><span>Register</span></button>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<app-footer></app-footer> -->
