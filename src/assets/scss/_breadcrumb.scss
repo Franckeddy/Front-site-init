@@ -1,0 +1,116 @@
+/****************************
+breadcrumb-section
+ *******************************************************************************************/
+
+ @media screen and (max-width: 767px) {
+	.breadcrumb-section {
+			padding-top: 50px;
+			padding-bottom: 50px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.breadcrumb-section {
+			padding-top: 80px;
+			padding-bottom: 80px;
+	}
+}
+
+.breadcrumb-item {
+	text-transform: capitalize;
+	line-height: 1;
+	padding: 0px !important;
+}
+
+@media screen and (max-width: 450px) {
+	.breadcrumb-item {
+			margin: 5px 0px;
+	}
+}
+
+.breadcrumb-item a {
+	display: inline-block;
+	position: relative;
+	color: #707070 !important;
+	line-height: 1;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+	content: "\f3d3";
+	color: #707070 !important;
+	margin: 0 10px;
+	content: "\f3d3";
+	font-family: "Ionicons";
+	padding: 0px !important;
+	position: relative;
+	top: 2px;
+	font-size: 14px;
+}
+
+.theme1 .breadcrumb-item a:hover {
+	color: #f33535 !important;
+}
+
+.theme1 .breadcrumb-item.active {
+	color: #f33535;
+}
+
+.theme3 .breadcrumb-item a:hover {
+	color: #10a341 !important;
+}
+
+.theme3 .breadcrumb-item.active {
+	color: #10a341;
+}
+
+
+/****************************
+breadcrumb-section END
+*******************************************************************************************/
+
+
+
+.breadcrumb-area {
+	background-color: #f3f3f3;
+	padding: 30px 0;
+	.breadcrumb-content {
+		.nav {
+			background: transparent;
+			padding: 0 0 0 0;
+			margin: 0;
+			font-size: 14px;
+
+			@media #{$desktop-device} {
+				padding: 0;
+			}
+			@media #{$tablet-device} {
+				padding: 0;
+			}
+			@media #{$large-mobile} {
+				padding: 0;
+			}
+			& li {
+				color: $theme-color;
+				line-height: 20px;
+				&:after {
+					color: #47494a;
+					margin: 0 10px;
+					vertical-align: -1px;
+					content: "\f3d3";
+					font-family: "Ionicons";
+				}
+				& a {
+					display: inline-block;
+					position: relative;
+					color: #47494a;
+					&:hover {
+						color: $theme-color;
+					}
+				}
+				&:last-child:after {
+					display: none;
+				}
+			}
+		}
+	}
+}

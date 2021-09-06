@@ -1,0 +1,56 @@
+/*------------------*
+# About Us Page
+*------------------*/
+
+.about-content .title {
+	font-size: 34px;
+	font-family: "Gilroy-Medium ☞";
+	font-weight: 500;
+	color: #1d1d1d;
+	text-transform: capitalize;
+}
+
+.about-info .title {
+	font-size: 34px;
+	font-family: "Gilroy-Medium ☞";
+	font-weight: 500;
+	color: #1d1d1d;
+}
+
+
+/* *******************************************************************************
+ about us page End
+*************************************************************************************/
+
+// About Page Style
+.about-area {
+	.about-content {
+		& h2 {
+			font-weight: 600;
+			margin: 0 0 15px;
+			font-size: 40px;
+			@media #{$extra-small-mobile} {
+				font-size: 24px;
+			}
+		}
+		p {
+			line-height: 24px;
+			color: #1d1d1d;
+		}
+	}
+	.single-about {
+		h4 {
+			font-size: 30px;
+			font-weight: 600;
+			color: #1d1d1d;
+			margin: 0 0 15px;
+			@media #{$extra-small-mobile} {
+				font-size: 24px;
+			}
+		}
+		p {
+			line-height: 24px;
+			color: #1d1d1d;
+		}
+	}
+}
