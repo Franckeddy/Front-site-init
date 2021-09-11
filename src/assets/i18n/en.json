@@ -1,0 +1,12 @@
+{
+   "ui": {
+      "home": "Home",
+      "sign_in_to_the_store_or_create_new_account": "Login / create an account",
+      "panel_login": "Log in to your account",
+      "email": "Email",
+      "password": "Password",
+      "show": "Show",
+      "sign_in": "Sign in",
+      "create_an_account": "Create an account"
+   }
+}
