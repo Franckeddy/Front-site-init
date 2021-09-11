@@ -1,6 +1,5 @@
 import { NgxPayPalModule } from 'ngx-paypal';
 import { AuthGuard } from './services/auth.guard';
-import { HttpClientModule } from '@angular/common/http';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -26,6 +25,16 @@ import { CheckoutComponent } from './shop/checkout/checkout.component';
 import { ButtonPaypalComponent } from './shop/button-paypal/button-paypal.component';
 import { SliderComponent } from './shop/slider/slider.component';
 import { EnvServiceProvider } from './env.service.provider';
+
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatSliderModule } from '@angular/material/slider';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+
 const routes: Routes = [
    { path: 'about', component: HomeComponent },
    { path: 'shop', component: ShopComponent },
@@ -67,8 +76,24 @@ const routes: Routes = [
       FormsModule,
       ReactiveFormsModule,
       NgxPayPalModule,
+      TranslateModule.forRoot({
+         loader: {
+            provide: TranslateLoader,
+            useFactory: HttpLoaderFactory,
+            deps: [HttpClient]
+         }
+      }),
+      BrowserAnimationsModule,
+      MatSliderModule,
+      MatInputModule,
+      MatSelectModule
    ],
    providers: [HttpClientModule, EnvServiceProvider],
    bootstrap: [AppComponent],
 })
 export class AppModule {}
+
+// required for AOT compilation
+export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
+   return new TranslateHttpLoader(http);
+}

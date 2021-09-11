@@ -3,8 +3,8 @@
       <div class="container">
          <div class="header-nav-wrapper d-md-flex d-sm-flex d-xl-flex d-lg-flex justify-content-between">
             <div class="header-static-nav">
-               <p *ngIf='isAuth' >Connecté!</p>
-               <p>Welcome you to Omnis Store!</p>
+               <p *ngIf='isAuth'>Connecté!</p>
+               <p [translate]="'demo.greeting'" [translateParams]="{name: 'Andreas'}"></p>
             </div>
             <div class="header-menu-nav">
                <ul class="menu-nav">
@@ -40,25 +40,46 @@
                      </div>
                   </li>
                   <li class="pr-0">
-                     <div class="dropdown">
+                     <!-- <div class="dropdown">
                         <button type="button" id="dropdownMenuButton-3" data-toggle="dropdown" aria-haspopup="true"
-                           aria-expanded="false">
+                           aria-expanded="false" *ngIf="translate.defaultLang === 'en'">
                            <img src="assets/images/flag/1.jpg" alt="" /> English <i class="ion-ios-arrow-down"></i>
+                        </button>
+                        <button type="button" id="dropdownMenuButton-4" data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="false" *ngIf="translate.defaultLang === 'fr'">
+                           <img src="assets/images/flag/2.jpg" alt="" /> Français <i class="ion-ios-arrow-down"></i>
                         </button>
                         <ul class="dropdown-menu animation slideDownIn" aria-labelledby="dropdownMenuButton-3">
                            <li>
-                              <a href="#">
+                              <button (click)="useLanguage('en')">
                                  <img src="assets/images/flag/1.jpg" alt="" />
                                  English
-                              </a>
+                              </button>
                            </li>
                            <li>
-                              <a href="#">
+                              <button (click)="useLanguage('fr')">
                                  <img src="assets/images/flag/2.jpg" alt="" />
                                  Français
-                              </a>
+                              </button>
                            </li>
                         </ul>
+                     </div> -->
+
+                     <!-- <section control-width="shrink">
+                        <select class="form-control" #selectedLang (change)="switchLang(selectedLang.value)">
+                           <option *ngFor="let language of translate.getLangs()" [value]="language" [selected]="language === translate.currentLang">
+                                 {{ language | uppercase }}
+                           </option>
+                        </select>
+                     </section> -->
+                     <div class="box">
+                        <select>
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                          <option>Option 4</option>
+                          <option>Option 5</option>
+                        </select>
                      </div>
                   </li>
                </ul>

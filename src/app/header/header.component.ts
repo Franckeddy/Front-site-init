@@ -8,6 +8,7 @@ import { CartService } from '../services/cart.service';
 import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { EnvService } from '../env.service';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
    selector: 'app-header',
@@ -25,8 +26,12 @@ export class HeaderComponent implements OnInit {
       private cartService: CartService,
       private categoryService: CategoryService,
       private userService: UsersService,
-      private env: EnvService
-   ) {}
+      private env: EnvService,
+      public translate: TranslateService
+   ) {
+      translate.addLangs(['fr', 'en']);
+      translate.setDefaultLang('en');
+   }
 
    ngOnInit(): void {
       this.cart = this.cartService.cart;
@@ -44,5 +49,13 @@ export class HeaderComponent implements OnInit {
    logout() {
       this.userService.logout();
       this.isAuth = this.userService.isAuth;
+   }
+
+   useLanguage(language: string): void {
+      this.translate.use(language);
+   }
+
+   switchLang(lang: string) {
+      this.translate.use(lang);
    }
 }
