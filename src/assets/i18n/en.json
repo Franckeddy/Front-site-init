@@ -38,6 +38,14 @@
       "not_connected": "Not connected !",
       "settings": "Settings",
       "call_us": "Call us",
-      "unsubscribe_notice": "You may unsubscribe at any moment. For that purpose, please find our contact info in the legal notice."
+      "unsubscribe_notice": "You may unsubscribe at any moment. For that purpose, please find our contact info in the legal notice.",
+      "welcome": "Welcome to OmniStore !",
+      "welcome_text": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet conse ctetur adipisicing elit.",
+      "our_company": "Our Company",
+      "our_company_text": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet conse ctetur adipisicing elit.",
+      "our_team": "Our team",
+      "our_team_text": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet conse ctetur adipisicing elit.",
+      "testimonial": "Testimonial",
+      "testimonial_text": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet conse ctetur adipisicing elit."
    }
 }
