@@ -348,11 +348,11 @@
 }
 
 .theme1 .product-sync-nav .slick-slide .product-thumb:hover {
-	border-color: #f33535;
+	border-color: $theme-color;
 }
 
 .theme1 .product-sync-nav .slick-slide.slick-current .product-thumb {
-	border-color: #f33535;
+	border-color: $theme-color;
 }
 
 .theme2 .product-sync-nav {

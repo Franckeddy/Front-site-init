@@ -138,7 +138,7 @@ span.separator {
 }
 
 .theme-border {
-    border: 2px solid #f33535 !important;
+    border: 2px solid $theme-color !important;
 }
 
 .theme-border2 {
@@ -271,11 +271,11 @@ hr.hr {
 }
 
 span.required {
-    color: #f33535;
+    color: $theme-color;
 }
 
 .theme1 .hover-color:hover {
-    color: #f33535 !important;
+    color: $theme-color !important;
 }
 
 .w-md-50 {
@@ -496,7 +496,7 @@ textarea:active::placeholder {
   ------------------------*/
 
 .theme-bg {
-    background-color: #f33535 !important;
+    background-color: $theme-color !important;
 }
 
 .theme-bg2 {
@@ -529,7 +529,7 @@ textarea:active::placeholder {
  -------------------*/
 
 .theme-color {
-    color: #f33535;
+    color: $theme-color;
 }
 
 .theme-color2 {
@@ -1319,7 +1319,7 @@ textarea:active::placeholder {
 
 .theme--btn-default {
     color: #ffffff;
-    background: #f33535;
+    background: $theme-color;
 }
 
 .theme--btn-default:hover {
@@ -1334,7 +1334,7 @@ textarea:active::placeholder {
 
 .theme--btn1:hover {
     color: #ffffff;
-    background: #f33535;
+    background: $theme-color;
 }
 
 .theme--btn2 {
@@ -1364,7 +1364,7 @@ textarea:active::placeholder {
 
 .theme-btn--light1:hover {
     color: #ffffff;
-    background: #f33535;
+    background: $theme-color;
 }
 
 .theme-btn--light2:hover {
@@ -1399,7 +1399,7 @@ textarea:active::placeholder {
 
 .theme-btn--dark1:hover {
     color: #ffffff;
-    background: #f33535;
+    background: $theme-color;
 }
 
 .theme-btn--dark2 {
@@ -1517,8 +1517,8 @@ textarea:active::placeholder {
 }
 
 .theme1 .nletter-btn {
-    background: #f33535;
-    border: 0px solid #f33535;
+    background: $theme-color;
+    border: 0px solid $theme-color;
 }
 
 .theme1 .nletter-btn:hover {
@@ -1562,7 +1562,7 @@ textarea:active::placeholder {
     line-height: 1;
     padding: 7px;
     color: #ffffff;
-    background: #f33535;
+    background: $theme-color;
     display: block;
     width: 100%;
     -webkit-transition: all 0.3s linear;
@@ -1589,8 +1589,8 @@ textarea:active::placeholder {
 }
 
 .theme1 .blog-search-btn {
-    background: #f33535;
-    border: 1px solid #f33535;
+    background: $theme-color;
+    border: 1px solid $theme-color;
 }
 
 .theme1 .blog-search-btn:hover {
@@ -1678,7 +1678,7 @@ textarea:active::placeholder {
 
 .theme3 .badge-success {
     color: #ffffff;
-    background-color: #f33535 !important;
+    background-color: $theme-color !important;
 }
 
 .cbdg1 {
@@ -1691,7 +1691,7 @@ textarea:active::placeholder {
 
 .theme1 .cbdg1 {
     color: #ffffff;
-    background-color: #f33535 !important;
+    background-color: $theme-color !important;
 }
 
 .theme2 .cbdg1 {
@@ -1779,7 +1779,7 @@ top-nav-style1 start
 }
 
 .theme1 .navbar-top ul li a:hover {
-    color: #f33535;
+    color: $theme-color;
 }
 
 .theme2 .navbar-top ul li a {
@@ -1855,11 +1855,11 @@ top-nav-style1 start
 }
 
 .theme1 .topnav-submenu li a:hover {
-    color: #f33535 !important;
+    color: $theme-color !important;
 }
 
 .theme1 .topnav-submenu li.active a {
-    color: #f33535 !important;
+    color: $theme-color !important;
 }
 
 .theme2 .topnav-submenu li a {
@@ -1958,11 +1958,11 @@ top-nav-style1 start
 }
 
 .theme1 li:hover>a {
-    color: #f33535;
+    color: $theme-color;
 }
 
 .theme1 li.active>a {
-    color: #f33535;
+    color: $theme-color;
 }
 
 .theme2 li a {
@@ -2404,7 +2404,7 @@ top-nav-style1 start
 }
 
 .theme1 .category-menu li:hover>a {
-    color: #f33535;
+    color: $theme-color;
 }
 
 .theme2 .category-menu li:hover>a {
@@ -2667,9 +2667,9 @@ top-nav-style1 start
 
 .theme1 .nav-link.active,
 .theme1 .nav-link:hover {
-    color: #f33535;
+    color: $theme-color;
     background: transparent;
-    border-color: #f33535;
+    border-color: $theme-color;
 }
 
 .theme2 .nav-link.active,
@@ -2737,7 +2737,7 @@ top-nav-style1 start
 }
 
 .theme1 .product-links li:hover a {
-    background: #f33535;
+    background: $theme-color;
     color: #ffffff;
 }
 
@@ -2981,8 +2981,8 @@ top-nav-style1 start
 
 .theme1 .slick-arrow:hover {
     color: #ffffff;
-    background: #f33535;
-    border-color: #f33535;
+    background: $theme-color;
+    border-color: $theme-color;
 }
 
 .theme2 .slick-arrow:hover {
@@ -3080,11 +3080,11 @@ top-nav-style1 start
 }
 
 .theme1 .slick-dots li button:hover {
-    background: #f33535;
+    background: $theme-color;
 }
 
 .theme1 .slick-dots li.slick-active button {
-    background: #f33535;
+    background: $theme-color;
 }
 
 .theme2 .slick-dots li button {
@@ -3116,12 +3116,12 @@ top-nav-style1 start
 }
 
 .theme1 .popular-slider-init.dots-style .slick-dots li button:hover {
-    background: #f33535;
+    background: $theme-color;
 }
 
 .theme1 .popular-slider-init.dots-style .slick-dots li.slick-active button {
     width: 28px;
-    background: #f33535;
+    background: $theme-color;
     border-radius: 8px;
 }
 
@@ -3225,7 +3225,7 @@ top-nav-style1 start
     bottom: -1px;
     width: 60px;
     height: 2px;
-    background: #f33535;
+    background: $theme-color;
 }
 
 .product-tag li a {
@@ -3246,8 +3246,8 @@ top-nav-style1 start
 
 .product-tag li a:hover {
     color: #ffffff;
-    background: #f33535;
-    border-color: #f33535;
+    background: $theme-color;
+    border-color: $theme-color;
 }
 
 
@@ -3344,7 +3344,7 @@ top-nav-style1 start
     bottom: -1px;
     width: 60px;
     height: 2px;
-    background: #f33535;
+    background: $theme-color;
 }
 
 .check-box-inner .sub-title {
@@ -3377,7 +3377,7 @@ top-nav-style1 start
 }
 
 .filter-check-box input[type="checkbox"]+label:hover {
-    color: #f33535;
+    color: $theme-color;
 }
 
 .filter-check-box input[type="checkbox"]+label:before {
@@ -3394,7 +3394,7 @@ top-nav-style1 start
 }
 
 .filter-check-box input[type="checkbox"]+label:hover:before {
-    border-color: #f33535;
+    border-color: $theme-color;
 }
 
 .filter-check-box.color-grey input[type="checkbox"]+label:before {
@@ -3432,7 +3432,7 @@ top-nav-style1 start
     width: 10px;
     top: -1px;
     left: 5px;
-    border-color: #f33535;
+    border-color: $theme-color;
     border-radius: 0;
     opacity: 1;
     border-top-color: transparent;
@@ -3442,7 +3442,7 @@ top-nav-style1 start
 }
 
 .theme1 .filter-check-box input[type="checkbox"]:checked+label:before {
-    border-color: #f33535;
+    border-color: $theme-color;
     border-radius: 0;
     opacity: 1;
     border-top-color: transparent;
@@ -3501,7 +3501,7 @@ top-nav-style1 start
     content: "";
     width: 12px;
     height: 12px;
-    background: #f33535;
+    background: $theme-color;
     position: absolute;
     top: 4px;
     left: 4px;
@@ -3521,7 +3521,7 @@ top-nav-style1 start
 }
 
 .filter-check-box input[type="radio"]+label:hover {
-    color: #f33535;
+    color: $theme-color;
 }
 
 
@@ -3535,7 +3535,7 @@ top-nav-style1 start
 }
 
 .check-box-inner .ui-widget-content {
-    border: 1px solid #f33535;
+    border: 1px solid $theme-color;
 }
 
 .check-box-inner .ui-slider-horizontal {
@@ -3543,7 +3543,7 @@ top-nav-style1 start
 }
 
 .check-box-inner .ui-widget-header {
-    background: #f33535;
+    background: $theme-color;
 }
 
 .check-box-inner .ui-slider-handle {
@@ -3650,7 +3650,7 @@ top-nav-style1 start
 }
 
 .phone a:hover {
-    color: #f33535 !important;
+    color: $theme-color !important;
 }
 
 .phone span {
@@ -3711,7 +3711,7 @@ top-nav-style1 start
 .page-item.active .page-link,
 .page-link:hover {
     color: #ffffff !important;
-    background: #f33535 !important;
+    background: $theme-color !important;
 }
 
 
@@ -3772,7 +3772,7 @@ top-nav-style1 start
 }
 
 .theme-default {
-    background: #f33535;
+    background: $theme-color;
     width: 40px;
     height: 40px;
     bottom: 50px;
@@ -3870,7 +3870,7 @@ top-nav-style1 start
 
 .shop-grid-nav .nav .nav-link.active,
 .shop-grid-nav .nav .nav-link:hover {
-    color: #f33535;
+    color: $theme-color;
 }
 
 .shop-grid-button button {
@@ -3907,7 +3907,7 @@ top-nav-style1 start
 }
 
 .shop-grid-menu .dropdown-item:hover {
-    background: #f33535;
+    background: $theme-color;
     color: #ffffff;
 }
 
@@ -3961,7 +3961,7 @@ top-nav-style1 start
 }
 
 .whish-list-section .table .thead-light th {
-    background-color: #f33535;
+    background-color: $theme-color;
     border-color: transparent;
     text-transform: capitalize;
     font-family: "Gilroy-Bold ☞";

@@ -48,11 +48,11 @@ breadcrumb-section
 }
 
 .theme1 .breadcrumb-item a:hover {
-	color: #f33535 !important;
+	color: $theme-color !important;
 }
 
 .theme1 .breadcrumb-item.active {
-	color: #f33535;
+	color: $theme-color;
 }
 
 .theme3 .breadcrumb-item a:hover {

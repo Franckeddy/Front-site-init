@@ -312,11 +312,11 @@ body.offcanvas-open {
 }
 
 .theme1 .offcanvas-menu li:hover>.menu-expand:after {
-	background: #f33535;
+	background: $theme-color;
 }
 
 .theme1 .offcanvas-menu li:hover>.menu-expand:before {
-	background: #f33535;
+	background: $theme-color;
 }
 
 .theme2 .offcanvas-menu li>a:hover {
@@ -345,13 +345,13 @@ body.offcanvas-open {
 
 .theme1 .offcanvas-social a {
 	color: #ffffff;
-	background: #f33535;
+	background: $theme-color;
 }
 
 .theme1 .offcanvas-social a:hover {
 	background: transparent;
-	color: #f33535;
-	border-color: #f33535;
+	color: $theme-color;
+	border-color: $theme-color;
 }
 
 .theme2 .offcanvas-social a {
@@ -520,7 +520,7 @@ offcanvas cart style
 }
 
 .theme1 .inner .sub-total .amount {
-	color: #f33535;
+	color: $theme-color;
 }
 
 .theme2 .inner .sub-total .amount {
@@ -532,11 +532,11 @@ offcanvas cart style
 }
 
 .theme1 .minicart-product-list li .content .title:hover {
-	color: #f33535;
+	color: $theme-color;
 }
 
 .theme1 .minicart-product-list li .content .remove:hover {
-	color: #f33535;
+	color: $theme-color;
 }
 
 .theme2 .minicart-product-list li .content .title:hover {

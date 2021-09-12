@@ -60,7 +60,7 @@ img.second-img {
 }
 
 .theme1 .product-desc .title:hover a {
-	color: #f33535;
+	color: $theme-color;
 }
 
 .theme2 .product-desc .title:hover a {
@@ -100,7 +100,7 @@ img.second-img {
 }
 
 .theme1 .product-price .onsale {
-	color: #f33535;
+	color: $theme-color;
 }
 
 .theme2 .product-price .onsale {

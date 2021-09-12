@@ -42,7 +42,7 @@
 
 .theme1 .social-network li a:hover {
 	color: #ffffff;
-	background: #f33535;
+	background: $theme-color;
 }
 
 .theme2 .social-network li a:hover {
@@ -123,7 +123,7 @@ footer::after {
 }
 
 .theme1 .address-widget .title a:hover {
-	color: #f33535;
+	color: $theme-color;
 }
 
 .theme2 .address-widget .title a:hover {
@@ -166,7 +166,7 @@ footer::after {
 }
 
 .theme1 .footer-widget .section-title::after {
-	background: #f33535;
+	background: $theme-color;
 }
 
 .theme2 .footer-widget .section-title::after {
@@ -197,7 +197,7 @@ footer::after {
 }
 
 .theme1 .footer-menu li a:hover {
-	color: #f33535;
+	color: $theme-color;
 }
 
 .theme2 .footer-menu li a:hover {
@@ -216,7 +216,7 @@ footer::after {
 }
 
 .theme1 .coppy-right a:hover {
-	color: #f33535;
+	color: $theme-color;
 	text-decoration: underline;
 }
 

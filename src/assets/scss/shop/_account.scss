@@ -49,7 +49,7 @@
 
 .myaccount-tab-menu a:hover,
 .myaccount-tab-menu a.active {
-	background-color: #f33535;
+	background-color: $theme-color;
 	color: #ffffff;
 }
 
@@ -87,7 +87,7 @@
 }
 
 .myaccount-content .welcome a:hover {
-	color: #f33535;
+	color: $theme-color;
 }
 
 .myaccount-content .welcome strong {
@@ -103,7 +103,7 @@
 }
 
 .myaccount-content a.edit-address-btn:hover {
-	color: #f33535;
+	color: $theme-color;
 }
 
 .myaccount-table {
