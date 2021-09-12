@@ -3,82 +3,34 @@
       <div class="container">
          <div class="header-nav-wrapper d-md-flex d-sm-flex d-xl-flex d-lg-flex justify-content-between">
             <div class="header-static-nav">
-               <p *ngIf='isAuth'>Connecté!</p>
-               <p [translate]="'demo.greeting'" [translateParams]="{name: 'Andreas'}"></p>
+               <p *ngIf='isAuth'>{{ 'ui.connected' | translate }}</p>
+               <p *ngIf='!isAuth'>{{ 'ui.not_connected' | translate }}</p>
             </div>
             <div class="header-menu-nav">
                <ul class="menu-nav">
                   <li>
                      <div class="dropdown">
                         <button type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                           aria-expanded="false">Setting <i class="ion-ios-arrow-down"></i></button>
+                           aria-expanded="false">{{ 'ui.settings' | translate }} <i class="ion-ios-arrow-down"></i></button>
                         <ul class="dropdown-menu animation slideDownIn" aria-labelledby="dropdownMenuButton">
                            <li>
-                              <a href="my-account.html">My account</a>
+                              <a href="my-account.html">{{ 'ui.my_account' | translate }}</a>
                            </li>
                            <li>
-                              <a href="checkout.html">Checkout</a>
+                              <a href="checkout.html">{{ 'ui.checkout' | translate }}</a>
                            </li>
                            <li>
-                              <a routerLink="/login">Sign in</a>
-                           </li>
-                        </ul>
-                     </div>
-                  </li>
-                  <li>
-                     <div class="dropdown">
-                        <button type="button" id="dropdownMenuButton-2" data-toggle="dropdown" aria-haspopup="true"
-                           aria-expanded="false">USD $ <i class="ion-ios-arrow-down"></i></button>
-                        <ul class="dropdown-menu animation slideDownIn" aria-labelledby="dropdownMenuButton-2">
-                           <li>
-                              <a href="#">EUR €</a>
-                           </li>
-                           <li>
-                              <a href="#">USD $</a>
+                              <a routerLink="/login">{{ 'ui.sign_in' | translate }}</a>
                            </li>
                         </ul>
                      </div>
                   </li>
                   <li class="pr-0">
-                     <!-- <div class="dropdown">
-                        <button type="button" id="dropdownMenuButton-3" data-toggle="dropdown" aria-haspopup="true"
-                           aria-expanded="false" *ngIf="translate.defaultLang === 'en'">
-                           <img src="assets/images/flag/1.jpg" alt="" /> English <i class="ion-ios-arrow-down"></i>
-                        </button>
-                        <button type="button" id="dropdownMenuButton-4" data-toggle="dropdown" aria-haspopup="true"
-                           aria-expanded="false" *ngIf="translate.defaultLang === 'fr'">
-                           <img src="assets/images/flag/2.jpg" alt="" /> Français <i class="ion-ios-arrow-down"></i>
-                        </button>
-                        <ul class="dropdown-menu animation slideDownIn" aria-labelledby="dropdownMenuButton-3">
-                           <li>
-                              <button (click)="useLanguage('en')">
-                                 <img src="assets/images/flag/1.jpg" alt="" />
-                                 English
-                              </button>
-                           </li>
-                           <li>
-                              <button (click)="useLanguage('fr')">
-                                 <img src="assets/images/flag/2.jpg" alt="" />
-                                 Français
-                              </button>
-                           </li>
-                        </ul>
-                     </div> -->
-
-                     <!-- <section control-width="shrink">
+                     <div class="box">
                         <select class="form-control" #selectedLang (change)="switchLang(selectedLang.value)">
                            <option *ngFor="let language of translate.getLangs()" [value]="language" [selected]="language === translate.currentLang">
-                                 {{ language | uppercase }}
+                              {{ language | uppercase }}
                            </option>
-                        </select>
-                     </section> -->
-                     <div class="box">
-                        <select>
-                          <option>Option 1</option>
-                          <option>Option 2</option>
-                          <option>Option 3</option>
-                          <option>Option 4</option>
-                          <option>Option 5</option>
                         </select>
                      </div>
                   </li>
@@ -103,7 +55,7 @@
                      <img class="mr-3 align-self-center" src="assets/img/icon/1.png" alt="icon">
                      <div class="media-body">
                         <div class="phone">
-                           <span class="text-muted">Call us:</span>
+                           <span class="text-muted">{{ 'ui.call_us' | translate }}</span>
                         </div>
                         <div class="phone">
                            <a href="tel:(+33)752152560" class="text-dark">(+33)752152560</a>
@@ -118,7 +70,8 @@
                                  <i class="icon-bag"></i>
                                  <span class="badge cbdg1">{{ cartData.len }}</span>
                               </span>
-                              <span class="cart-total position-relative">${{ (cartData.cost).toFixed(2) }}</span>
+                              <span class="cart-total position-relative" *ngIf="translate.currentLang === 'en'">${{ (cartData.cost).toFixed(2) }}</span>
+                              <span class="cart-total position-relative" *ngIf="translate.currentLang === 'fr'">€{{ (cartData.cost).toFixed(2) }}</span>
                            </a>
                         </li>
                      </ul>
@@ -147,21 +100,16 @@
    <div class="header-menu bg-blue sticky-nav d-xl-block d-none padding-0px">
       <div class="container">
          <div class="row">
-            <div class="col-lg-3 custom-col-2">
-               <div class="header-menu-vertical">
-                  <h4 class="menu-title">All Cattegories</h4>
-               </div>
-            </div>
             <div class="col-lg-9 custom-col-2 d-flex flex-wrap align-items-center position-relative">
                <ul class="main-menu d-flex">
                   <li routerLinkActive="active">
-                     <a routerLink="/about">About us</a>
+                     <a routerLink="/about">{{ 'ui.about_us' | translate }}</a>
                   </li>
                   <li routerLinkActive="active">
-                     <a routerLink="/shop">Shop</a>
+                     <a routerLink="/shop">{{ 'ui.shop' | translate }}</a>
                   </li>
                   <li routerLinkActive="active">
-                     <a>Category</a>
+                     <a>{{ 'ui.category' | translate }}</a>
                      <ul class="sub-menu">
                         <li *ngFor="let category of categories">
                            <a [routerLink]="['/category',category.idCategory]">{{ category.name }}</a>
@@ -169,16 +117,16 @@
                      </ul>
                   </li>
                   <li routerLinkActive="active">
-                     <a routerLink="/contact">Contact</a>
+                     <a routerLink="/contact">{{ 'ui.contact' | translate }}</a>
                   </li>
                   <li routerLinkActive="active" *ngIf="!isAuth">
-                     <a routerLink="/login">Login</a>
+                     <a routerLink="/login">{{ 'ui.login_instead' | translate }}</a>
                   </li>
                   <li routerLinkActive="active" *ngIf="!isAuth">
-                     <a routerLink="/register">register</a>
+                     <a routerLink="/register">{{ 'ui.register' | translate }}</a>
                   </li>
                   <li routerLinkActive="active" (click)="logout()" *ngIf="isAuth">
-                     <a>Logout</a>
+                     <a>{{ 'ui.logout' | translate }}</a>
                   </li>
                </ul>
             </div>
@@ -188,7 +136,7 @@
    <div id="offcanvas-cart" class="offcanvas offcanvas-cart">
       <div class="inner">
          <div class="head">
-            <span class="title">Cart</span>
+            <span class="title">{{ 'ui.cart' | translate }}</span>
             <button class="offcanvas-close">×</button>
          </div>
          <div>
@@ -201,7 +149,11 @@
                         </a>
                      <div class="content">
                         <a href="single-product.html" class="title">{{ cartData.product.name }}</a>
-                        <span class="quantity-price">1 x <span class="amount">${{ cartData.product.price }}</span></span>
+                        <span class="quantity-price">
+                           1 x
+                           <span class="amount" *ngIf="translate.currentLang === 'en'">${{ cartData.product.price }}</span>
+                           <span class="amount" *ngIf="translate.currentLang === 'fr'">€{{ cartData.product.price }}</span>
+                        </span>
                         <a href="#" class="remove">×</a>
                      </div>
                   </li>
@@ -211,11 +163,12 @@
          <div class="foot">
             <div class="sub-total">
                <strong>Subtotal :</strong>
-               <span class="amount">${{ (cartData.cost).toFixed(2) }}</span>
+               <span class="amount" *ngIf="translate.currentLang === 'en'">${{ (cartData.cost).toFixed(2) }}</span>
+               <span class="amount" *ngIf="translate.currentLang === 'fr'">€{{ (cartData.cost).toFixed(2) }}</span>
             </div>
             <div class="buttons">
-               <a href="/cart" class="btn btn-dark btn-hover-primary mb-30px">view cart</a>
-               <a routerLink="/checkout" class="btn btn-outline-dark current-btn">checkout</a>
+               <a href="/cart" class="btn btn-dark btn-hover-primary mb-30px">{{ 'ui.view_cart' | translate }}</a>
+               <a routerLink="/checkout" class="btn btn-outline-dark current-btn">{{ 'ui.checkout' | translate }}</a>
             </div>
          </div>
       </div>

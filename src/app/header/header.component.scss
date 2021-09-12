@@ -3,14 +3,8 @@ ul.main-menu li {
     color: white;
 }
 
-.box select {
-  background-color: #0563af;
-  color: white;
-  padding: 12px;
+.box select option{
   border: none;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
-  -webkit-appearance: button;
-  appearance: button;
   outline: none;
 }
 
