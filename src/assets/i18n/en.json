@@ -7,6 +7,12 @@
       "password": "Password",
       "show": "Show",
       "sign_in": "Sign in",
-      "create_an_account": "Create an account"
+      "create_an_account": "Create an account",
+      "firstname": "Firstname",
+      "lastname": "Lastname",
+      "register": "Register",
+      "login_instead": "Log in instead",
+      "pseudo": "Pseudo",
+      "account_already": "Already have an account ?"
    }
 }
