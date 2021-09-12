@@ -16,6 +16,17 @@
       "account_already": "Vous avez déjà un compte ?",
       "follow": "Suivez-nous",
       "send": "Envoyer",
-      "get_in_touch": "Entrer en contact"
+      "get_in_touch": "Entrer en contact",
+      "about_us": "A propos de nous",
+      "need_help": "Besoin d'aide ?",
+      "information": "Information",
+      "we_are": "Nous sommes ...",
+      "delivery": "Livraison",
+      "payment": "Paiement Sécurisé",
+      "sitemap": "Plan du site",
+      "store": "Magasin",
+      "category": "Catégories",
+      "newsletter": "Newsletter",
+      "unsubscribe_notice": "Vous pouvez vous désinscrire à tout moment. Pour cela, veuillez trouver nos coordonnées dans les mentions légales."
    }
 }

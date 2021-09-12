@@ -5,56 +5,50 @@
             <div class="row">
                <div class="col-md-6 col-lg-4 mb-md-30px mb-lm-30px">
                   <div class="single-wedge">
-                     <h4 class="footer-herading">ABOUT US</h4>
-                     <p class="text-infor">We are a team of designers and developers that create high quality HTML
-                        template</p>
+                     <a routerLink="/about">
+                        <h4 class="footer-herading">{{ 'ui.about_us' | translate }}</h4>
+                     </a>
+                     <p class="text-infor">{{ 'ui.we_are' | translate }}</p>
                      <div class="need-help">
                         <p class="phone-info">
-                           NEED HELP?
-                           <span>
-                              0123456789 <br />
-                              0123456789
-                           </span>
+                           {{ 'ui.need_help' | translate }}
+                           <span>0123456789</span>
                         </p>
                      </div>
                   </div>
                </div>
                <div class="col-md-6 col-lg-2 mb-md-30px mb-lm-30px">
                   <div class="single-wedge">
-                     <h4 class="footer-herading">Information</h4>
+                     <h4 class="footer-herading">{{ 'ui.information' | translate }}</h4>
                      <div class="footer-links">
                         <ul>
-                           <li><a href="#">Delivery</a></li>
-                           <li><a routerLink="/about">About Us</a></li>
-                           <li><a href="#">Secure Payment</a></li>
-                           <li><a routerLink="/contact">Contact Us</a></li>
-                           <li><a href="#">Sitemap</a></li>
-                           <li><a href="#">Stores</a></li>
+                           <li><a href="#">{{ 'ui.delivery' | translate }}</a></li>
+                           <li><a routerLink="/about">{{ 'ui.about_us' | translate }}</a></li>
+                           <li><a href="#">{{ 'ui.payment' | translate }}</a></li>
+                           <li><a routerLink="/contact">{{ 'ui.contact' | translate }}</a></li>
+                           <li><a href="#">{{ 'ui.sitemap' | translate }}</a></li>
+                           <li><a href="#">{{ 'ui.store' | translate }}</a></li>
                         </ul>
                      </div>
                   </div>
                </div>
                <div class="col-md-6 col-lg-2 mb-sm-30px mb-lm-30px">
                   <div class="single-wedge">
-                     <h4 class="footer-herading">CUSTOM LINKS</h4>
+                     <h4 class="footer-herading">{{ 'ui.category' | translate }}</h4>
                      <div class="footer-links">
                         <ul>
-                           <li><a href="#">Legal Notice</a></li>
-                           <li><a href="#">Prices Drop</a></li>
-                           <li><a href="#">New Products</a></li>
-                           <li><a href="#">Best Sales</a></li>
-                           <li><a routerLink="/login">Login</a></li>
-                           <li><a routerLink="/account">My Account</a></li>
+                           <li *ngFor="let category of categories">
+                              <a [routerLink]="['/category',category.idCategory]">{{ category.name }}</a>
+                           </li>
                         </ul>
                      </div>
                   </div>
                </div>
                <div class="col-md-6 col-lg-4 ">
                   <div class="single-wedge">
-                     <h4 class="footer-herading">NEWSLETTER</h4>
+                     <h4 class="footer-herading">{{ 'ui.newsletter' | translate }}</h4>
                      <div class="subscrib-text">
-                        <p>You may unsubscribe at any moment. For that purpose, please find our contact info in the
-                           legal notice.</p>
+                        <p>{{ 'ui.unsubscribe_notice' | translate }}</p>
                      </div>
                      <div id="mc_embed_signup" class="subscribe-form">
                         <form id="mc-embedded-subscribe-form" class="validate" novalidate="" target="_blank"
@@ -77,16 +71,10 @@
                      <div class="social-info">
                         <ul>
                            <li>
-                              <a href="#"><i class="icon-social-facebook"></i></a>
-                           </li>
-                           <li>
                               <a href="#"><i class="icon-social-twitter"></i></a>
                            </li>
                            <li>
                               <a href="#"><i class="icon-social-instagram"></i></a>
-                           </li>
-                           <li>
-                              <a href="#"><i class="icon-social-google"></i></a>
                            </li>
                            <li>
                               <a href="#"><i class="icon-social-instagram"></i></a>
@@ -102,10 +90,7 @@
          <div class="container">
             <div class="row">
                <div class="col-md-6">
-                  <p class="copy-text"> © 2021 <strong>Rozer</strong> Made With <i class="fa fa-heart"
-                        style="color: red;" aria-hidden="true"></i> By <a class="company-name"
-                        href="https://hasthemes.com/">
-                        <strong> HasThemes</strong></a>.</p>
+                  <p class="copy-text">© 2021</p>
                </div>
                <div class="col-md-6 text-right">
                   <img class="payment-img" src="assets/images/icons/payment.png" alt="" />

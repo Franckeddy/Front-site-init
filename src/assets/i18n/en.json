@@ -17,6 +17,17 @@
       "account_already": "Already have an account ?",
       "follow": "Follow us",
       "send": "Send",
-      "get_in_touch": "Get In Touch"
+      "get_in_touch": "Get In Touch",
+      "about_us": "About us",
+      "need_help": "Need help ?",
+      "information": "Information",
+      "we_are": "We are ...",
+      "delivery": "Livraison",
+      "payment": "Secure Payment",
+      "sitemap": "Sitemap",
+      "store": "Store",
+      "category": "Category",
+      "newsletter": "Newsletter",
+      "unsubscribe_notice": "You may unsubscribe at any moment. For that purpose, please find our contact info in the legal notice."
    }
 }

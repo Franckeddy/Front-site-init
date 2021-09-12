@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { Category } from '../model/category';
+import { CategoryService } from '../services/category.service';
 
 @Component({
    selector: 'app-footer',
@@ -6,7 +9,17 @@ import { Component, OnInit } from '@angular/core';
    styleUrls: ['./footer.component.scss'],
 })
 export class FooterComponent implements OnInit {
-   constructor() {}
+   constructor(private categoryService: CategoryService) {}
 
-   ngOnInit(): void {}
+   categories: Category[];
+   categorySub: Subscription;
+
+   ngOnInit(): void {
+      this.categorySub = this.categoryService.categorySubject.subscribe(
+         (data: Category[]) => {
+            this.categories = data;
+         }
+      );
+      this.categoryService.emitCategories();
+   }
 }
