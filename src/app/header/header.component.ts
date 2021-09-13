@@ -8,7 +8,7 @@ import { CartService } from '../services/cart.service';
 import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { EnvService } from '../env.service';
-import {TranslateService} from '@ngx-translate/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
    selector: 'app-header',

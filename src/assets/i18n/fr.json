@@ -46,5 +46,28 @@
       "our_team_text": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet conse ctetur adipisicing elit.",
       "testimonial": "Témoignage",
       "testimonial_text": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet conse ctetur adipisicing elit."
+   },
+   "cart": {
+      "home": "Acceuil",
+      "cart": "Panier",
+      "items_cart": "Les articles de votre panier",
+      "image": "image",
+      "product_name": "Nom du produit",
+      "unit_price": "Prix unitaire",
+      "quantity": "Quantité",
+      "subtotal": "Sous total",
+      "action": "Action",
+      "continue": "Continuer le shopping",
+      "clear": "Supprimer le panier",
+      "update": "Mettre à jour le panier",
+      "total": "Total",
+      "big_total": "Grand total",
+      "total_products": "Total des produits",
+      "total_shipping": "Total des frais de port",
+      "proceed_checkout": "Passer au paiement",
+      "empty_cart": "Votre panier est vide",
+      "back_to_shop": "Retour au magasin",
+      "express": "Express",
+      "standard": "Standar"
    }
 }

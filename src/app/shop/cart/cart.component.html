@@ -7,8 +7,8 @@
             <div class="col-md-12">
                <div class="breadcrumb-content">
                   <ul class="nav">
-                     <li><a routerLink="/">Home</a></li>
-                     <li>Cart</li>
+                     <li><a routerLink="/">{{ "cart.home" | translate }}</a></li>
+                     <li>{{ "cart.cart" | translate }}</li>
                   </ul>
                </div>
             </div>
@@ -17,7 +17,7 @@
    </div>
    <div class="cart-main-area mtb-60px">
       <div class="container" *ngIf="cart.length">
-         <h3 class="cart-page-title">Your cart items</h3>
+         <h3 class="cart-page-title">{{ "cart.items_cart" | translate }}</h3>
          <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                <form action="#">
@@ -25,12 +25,12 @@
                      <table>
                         <thead>
                            <tr>
-                              <th>Image</th>
-                              <th>Product Name</th>
-                              <th>Until Price</th>
-                              <th>Qty</th>
-                              <th>Subtotal</th>
-                              <th>Action</th>
+                              <th>{{ "cart.image" | translate }}</th>
+                              <th>{{ "cart.product_name" | translate }}</th>
+                              <th>{{ "cart.unit_price" | translate }}</th>
+                              <th>{{ "cart.quantity" | translate }}</th>
+                              <th>{{ "cart.subtotal" | translate }}</th>
+                              <th>{{ "cart.action" | translate }}</th>
                            </tr>
                         </thead>
                         <tbody>
@@ -41,7 +41,8 @@
                                  </a>
                               </td>
                               <td class="product-name"><a href="#">{{ data.product.name }}</a></td>
-                              <td class="product-price-cart"><span class="amount">${{ data.product.price }}</span></td>
+                              <td class="product-price-cart"><span class="amount" *ngIf="translate.currentLang === 'en'">${{ data.product.price }}</span></td>
+                              <td class="product-price-cart"><span class="amount" *ngIf="translate.currentLang === 'fr'">€{{ data.product.price }}</span></td>
                               <td class="product-quantity">
                                  <div class="cart-plus-minus">
                                     <div (click)="addProduct(data.product)" class="dec qtybutton">
@@ -53,7 +54,8 @@
                                     </div>
                                  </div>
                               </td>
-                              <td class="product-subtotal">${{ (data.product.price*data.number).toFixed(2) }}</td>
+                              <td class="product-subtotal" *ngIf="translate.currentLang === 'en'">${{ (data.product.price*data.number).toFixed(2) }}</td>
+                              <td class="product-subtotal" *ngIf="translate.currentLang === 'fr'">€{{ (data.product.price*data.number).toFixed(2) }}</td>
                               <td class="product-remove">
                                  <button (click)="removeProduct(index)">
                                     <i class="icon-close"></i>
@@ -67,11 +69,11 @@
                      <div class="col-lg-12">
                         <div class="cart-shiping-update-wrapper">
                            <div class="cart-shiping-update">
-                              <a routerLink="/shop">Continue Shopping</a>
+                              <a routerLink="/shop">{{ "cart.continue" | translate }}</a>
                            </div>
                            <div class="cart-clear">
-                              <button>Update Shopping Cart</button>
-                              <a href="#" (click)="removeAllProducts()">Clear Shopping Cart</a>
+                              <button>{{ "cart.update" | translate }}</button>
+                              <a href="#" (click)="removeAllProducts()">{{ "cart.clear" | translate }}</a>
                            </div>
                         </div>
                      </div>
@@ -81,18 +83,18 @@
                   <div class="col-lg-4 col-md-12 mt-md-30px">
                      <div class="grand-totall">
                         <div class="title-wrap">
-                           <h4 class="cart-bottom-title section-bg-gary-cart">Cart Total</h4>
+                           <h4 class="cart-bottom-title section-bg-gary-cart">{{ "cart.total" | translate }}</h4>
                         </div>
-                        <h5>Total products <span>$260.00</span></h5>
+                        <h5>{{ "cart.total_products" | translate }}<span>$260.00</span></h5>
                         <div class="total-shipping">
-                           <h5>Total shipping</h5>
+                           <h5>{{ "cart.total_shipping" | translate }}</h5>
                            <ul>
-                              <li><input type="checkbox" /> Standard <span>$20.00</span></li>
-                              <li><input type="checkbox" /> Express <span>$30.00</span></li>
+                              <li><input type="checkbox" /> {{ "cart.standard" | translate }} <span>$20.00</span></li>
+                              <li><input type="checkbox" /> {{ "cart.express" | translate }} <span>$30.00</span></li>
                            </ul>
                         </div>
-                        <h4 class="grand-totall-title">Grand Total <span>$260.00</span></h4>
-                        <a href="#">Proceed to Checkout</a>
+                        <h4 class="grand-totall-title">{{ "cart.big_total" | translate }}<span>$260.00</span></h4>
+                        <a href="#">{{ "cart.proceed_checkout" | translate }}</a>
                      </div>
                   </div>
                </div>
@@ -100,10 +102,10 @@
          </div>
       </div>
       <div class="container" *ngIf="!cart.length">
-         <h3 class="title mb-30 pb-25 text-capitalize">Your cart is empty</h3>
+         <h3 class="title mb-30 pb-25 text-capitalize">{{ "cart.empty_cart" | translate }}</h3>
          <div class="cart-shiping-update-wrapper">
             <div class="cart-shiping-update">
-               <a routerLink="/shop">Go back to shop</a>
+               <a routerLink="/shop">{{ "cart.back_to_shop" | translate }}</a>
             </div>
          </div>
       </div>

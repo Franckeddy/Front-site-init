@@ -4,6 +4,7 @@ import { Products } from '../../model/products';
 import { Component, OnInit } from '@angular/core';
 import { environment } from './../../../environments/environment';
 import { EnvService } from '../../env.service';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
    selector: 'app-cart',
@@ -14,8 +15,12 @@ export class CartComponent implements OnInit {
    cart: Cart[] = [];
 
    constructor(private cartService: CartService,
-               private env: EnvService
-               ) { }
+               private env: EnvService,
+               public translate: TranslateService
+   ) {
+      translate.addLangs(['fr', 'en']);
+      translate.setDefaultLang('en');
+   }
 
    ngOnInit(): void {
       this.cart = this.cartService.cart;

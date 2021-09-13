@@ -47,5 +47,28 @@
       "our_team_text": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet conse ctetur adipisicing elit.",
       "testimonial": "Testimonial",
       "testimonial_text": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet conse ctetur adipisicing elit."
+   },
+   "cart": {
+      "home": "Home",
+      "cart": "Cart",
+      "items_cart": "Your cart items",
+      "image": "image",
+      "product_name": "Product name",
+      "unit_price": "Unit price",
+      "quantity": "Quantity",
+      "subtotal": "Subtotal",
+      "action": "Action",
+      "continue": "Continue shopping",
+      "clear": "Clear shopping cart",
+      "update": "Update shopping cart",
+      "total": "Total",
+      "big_total": "Grand total",
+      "total_products": "Total products",
+      "total_shipping": "Total shipping",
+      "proceed_checkout": "Proceed to checkout",
+      "empty_cart": "You cart is empty",
+      "back_to_shop": "Back to shop",
+      "express": "Express",
+      "standard": "Standar"
    }
 }
