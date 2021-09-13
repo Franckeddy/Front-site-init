@@ -81,7 +81,6 @@ export class ButtonPaypalComponent implements OnInit {
             );
             const user = this.userService.user;
             const cart = this.cartService.cart;
-
             this.ordersService
                .createOrders(user, cart)
                .then(() => {

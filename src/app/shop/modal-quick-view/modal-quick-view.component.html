@@ -19,17 +19,7 @@
                <div class="col-md-7 col-sm-12 col-xs-12">
                   <div class="product-details-content quickview-content">
                      <h2>{{ product.name }}</h2>
-                     <p class="reference">Reference:<span>{{ product.idProduct }}</span></p>
-                     <div class="pro-details-rating-wrap">
-                        <div class="rating-product">
-                           <i class="ion-android-star"></i>
-                           <i class="ion-android-star"></i>
-                           <i class="ion-android-star"></i>
-                           <i class="ion-android-star"></i>
-                           <i class="ion-android-star"></i>
-                        </div>
-                        <span class="read-review"><a class="reviews" href="#">Read reviews (1)</a></span>
-                     </div>
+                     <p class="reference">{{ "product.references" | translate }}:<span>{{ product.idProduct }}</span></p>
                      <div class="pricing-meta">
                         <ul>
                            <li class="old-price not-cut">€{{ product.price }}</li>
@@ -41,11 +31,11 @@
                            <input class="cart-plus-minus-box" type="text" name="qtybutton" value="1" />
                         </div>
                         <div class="pro-details-cart btn-hover">
-                           <a (click)="addCart(product)"> + Add To Cart</a>
+                           <a (click)="addCart(product)"> + {{ "product.add_to_cart" | translate }}</a>
                         </div>
                      </div>
                      <div class="pro-details-social-info">
-                        <span>Share</span>
+                        <span>{{ "product.share" | translate }}</span>
                         <div class="social-info">
                            <ul>
                               <li>

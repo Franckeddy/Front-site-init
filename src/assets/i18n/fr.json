@@ -69,5 +69,16 @@
       "back_to_shop": "Retour au magasin",
       "express": "Express",
       "standard": "Standar"
+   },
+   "product": {
+      "new": "Nouveau",
+      "description": "Descritpion",
+      "add_to_cart": "Ajouter au panier",
+      "details": "Détails du produit",
+      "reviews": "Avis",
+      "references": "Références",
+      "in_stock": "En stock",
+      "data_sheet": "Fiche technique",
+      "share": "Partager"
    }
 }

@@ -70,5 +70,16 @@
       "back_to_shop": "Back to shop",
       "express": "Express",
       "standard": "Standar"
+   },
+   "product": {
+      "new": "new",
+      "description": "Descritpion",
+      "add_to_cart": "Add to cart",
+      "details": "Product details",
+      "reviews": "Reviews",
+      "references": "References",
+      "in_stock": "In stock",
+      "data_sheet": "Data Sheet",
+      "share": "Share"
    }
 }
