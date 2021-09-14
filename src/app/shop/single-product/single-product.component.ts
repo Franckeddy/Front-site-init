@@ -1,5 +1,4 @@
 import { Subscription } from 'rxjs';
-import { environment } from './../../../environments/environment';
 import { Products } from './../../model/products';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
