@@ -47,6 +47,16 @@
       "testimonial": "Témoignage",
       "testimonial_text": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet conse ctetur adipisicing elit."
    },
+   "shop": {
+      "free_shipping": "Frais de port gratuit",
+      "orders_shipping": "Tout achats au dessus de €75.00",
+      "free_return": "Retour gratuit",
+      "free_return_9": "Retour gratuit sous 9 jours",
+      "free_support": "Support 24/7",
+      "contact_us": "Contacter nous 24/24 7/7",
+      "payment_secure": "100% Paiement Securisé",
+      "payment_safe": "Votre paiement est securisé avec nous."
+   },
    "cart": {
       "home": "Acceuil",
       "cart": "Panier",

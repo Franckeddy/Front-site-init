@@ -48,6 +48,16 @@
       "testimonial": "Testimonial",
       "testimonial_text": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet conse ctetur adipisicing elit."
    },
+   "shop": {
+      "free_shipping": "FreeShipping",
+      "orders_shipping": "On all orders over $75.00",
+      "free_return": "Free Returns",
+      "free_return_9": "Returns are free within 9 days",
+      "free_support": "Support 24/7",
+      "contact_us": "Contact us 24 hours a day",
+      "payment_secure": "100% Payment Secure",
+      "payment_safe": "Your payment are safe with us."
+   },
    "cart": {
       "home": "Home",
       "cart": "Cart",
