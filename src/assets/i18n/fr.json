@@ -80,5 +80,14 @@
       "in_stock": "En stock",
       "data_sheet": "Fiche technique",
       "share": "Partager"
+   },
+   "checkout": {
+      "shipping": "Frais de port",
+      "item": "Article",
+      "tva": "TVA (20%)",
+      "ttc": "TTC",
+      "security_policy": "Security policy (edit with Customer reassurance module)",
+      "delivery_policy": "Delivery policy (edit with Customer reassurance module)",
+      "return_policy": "Return policy (edit with Customer reassurance module)"
    }
 }

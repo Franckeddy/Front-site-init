@@ -18,7 +18,7 @@ export class CartComponent implements OnInit {
                private env: EnvService,
                public translate: TranslateService
    ) {
-      translate.addLangs(['fr', 'en']);
+      translate.addLangs(['en', 'fr']);
       translate.setDefaultLang('en');
    }
 
