@@ -82,7 +82,7 @@
    },
    "product": {
       "new": "Nouveau",
-      "description": "Descritpion",
+      "description": "Déscritpion",
       "add_to_cart": "Ajouter au panier",
       "details": "Détails du produit",
       "reviews": "Avis",
@@ -99,5 +99,9 @@
       "security_policy": "Security policy (edit with Customer reassurance module)",
       "delivery_policy": "Delivery policy (edit with Customer reassurance module)",
       "return_policy": "Return policy (edit with Customer reassurance module)"
+   },
+   "modal": {
+      "success_added": "Produit ajouté avec succès au panier",
+      "total_items": "articles dans votre panier."
    }
 }
