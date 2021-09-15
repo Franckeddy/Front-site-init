@@ -1,81 +1,30 @@
 <app-header></app-header>
 
-<!-- translation: directive (key as attribute)-->
-
 <div class="breadcrumb-area">
    <div class="container">
       <div class="row">
          <div class="col-md-12">
             <div class="breadcrumb-content">
                <ul class="nav">
-                  <li><a href="index.html" [translate]="'ui.home'"></a></li>
-                  <li [translate]="'ui.sign_in_to_the_store_or_create_new_account'"></li>
+                  <li><a href="index.html">{{ "ui.home" | translate }}</a></li>
+                  <li>{{ "ui.sign_in_to_the_store_or_create_new_account" | translate }}</li>
                </ul>
             </div>
          </div>
       </div>
    </div>
 </div>
-<div class="my-account pt-80 pb-80">
-   <div class="container">
-      <div class="row">
-         <div class="col-12">
-            <h3 class="title text-capitalize mb-30 pb-25" [translate]="'ui.panel_login'"></h3>
-            <form class="log-in-form" [formGroup]="loginForm">
-               <div class="alert alert-danger text-center" role="alert" *ngIf="errorMessage">{{errorMessage}}</div>
-               <div class="form-group row">
-                  <label for="staticEmail" class="col-md-3 col-form-label" [translate]="'ui.email'"></label>
-                  <div class="col-md-6">
-                     <input formControlName="email" name="email" type="email" class="form-control" id="staticEmail">
-                  </div>
-               </div>
-               <div class="form-group row">
-                  <label for="inputPassword" class="col-md-3 col-form-label" [translate]="'ui.password'"></label>
-                  <div class="col-md-6">
-                     <div class="input-group mb-2 mr-sm-2">
-                        <input formControlName="password" name="password" type="password" class="form-control" id="inputPassword">
-                        <div class="input-group-prepend">
-                           <button type="button"
-                              class="input-group-text  theme-btn--dark1 btn--md show-password" [translate]="'ui.show'"></button>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="form-group row pb-3 text-center">
-                  <div class="col-md-6 offset-md-3">
-                     <div class="login-form-links">
-                        <div class="sign-btn">
-                           <button (click)="onSubmit()" class="btn theme-btn--dark1 btn--md" [disabled]="loginForm.invalid" [translate]="'ui.sign_in'"></button>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="form-group row text-center mb-0">
-                  <div class="col-12">
-                     <div class="border-top">
-                        <a href="/register" class="no-account" [translate]="'ui.create_an_account'"></a>
-                     </div>
-                  </div>
-               </div>
-            </form>
-         </div>
-      </div>
-   </div>
-</div>
-<app-footer></app-footer>
-
-
-<!-- <div class="login-register-area mtb-60px">
+<div class="login-register-area mtb-60px">
    <div class="container">
       <div class="row">
          <div class="col-lg-7 col-md-12 ml-auto mr-auto">
             <div class="login-register-wrapper">
                <div class="login-register-tab-list nav">
-                  <a class="active" data-toggle="tab" routerLink="/login">
-                     <h4>login</h4>
+                  <a class="active" data-toggle="tab" href="#lg1">
+                     <h4>{{ "ui.login_instead" | translate }}</h4>
                   </a>
-                  <a data-toggle="tab" routerLink="/register">
-                     <h4>register</h4>
+                  <a data-toggle="tab" href="#lg2">
+                     <h4>{{ "ui.register" | translate }}</h4>
                   </a>
                </div>
                <div class="tab-content">
@@ -83,15 +32,16 @@
                      <div class="login-form-container">
                         <div class="login-register-form">
                            <form action="#" method="post" [formGroup]="loginForm">
-                              <input formControlName="email" name="email" required type="email" placeholder="Email" />
-                              <input formControlName="password" name="password" type="password" placeholder="Password" />
+                              <div class="alert alert-danger text-center" role="alert" *ngIf="errorMessage">{{errorMessage}}</div>
+                              <input type="text" name="user-name" placeholder='{{ "ui.username" | translate }}' />
+                              <input type="password" name="user-password" placeholder='{{ "ui.password" | translate }}' />
                               <div class="button-box">
                                  <div class="login-toggle-btn">
                                     <input type="checkbox" />
-                                    <a class="flote-none" href="javascript:void(0)">Remember me</a>
+                                    <a class="flote-none" href="javascript:void(0)"> Remember me</a>
                                     <a href="#">Forgot Password?</a>
                                  </div>
-                                 <button (click)="onSubmit()" type="submit" [disabled]="loginForm.invalid" ><span>Login</span></button>
+                                 <button type="submit" (click)="onSubmit()" [disabled]="loginForm.invalid"><span>{{ "ui.sign_in" | translate }}</span></button>
                               </div>
                            </form>
                         </div>
@@ -101,11 +51,12 @@
                      <div class="login-form-container">
                         <div class="login-register-form">
                            <form action="#" method="post">
-                              <input type="text" name="user-name" placeholder="Username" />
-                              <input type="password" name="user-password" placeholder="Password" />
-                              <input name="user-email" placeholder="Email" type="email" />
+                              <div class="alert alert-danger text-center" role="alert" *ngIf="errorMessage">{{errorMessage}}</div>
+                              <input type="text" name="user-name" placeholder='{{ "ui.username" | translate }}' />
+                              <input type="password" name="user-password" placeholder='{{ "ui.password" | translate }}' />
+                              <input name="user-email" placeholder='{{ "ui.email" | translate }}' type="email" />
                               <div class="button-box">
-                                 <button type="submit"><span>Register</span></button>
+                                 <button type="submit"><span>{{ "ui.register" | translate }}</span></button>
                               </div>
                            </form>
                         </div>
@@ -117,4 +68,4 @@
       </div>
    </div>
 </div>
-<app-footer></app-footer> -->
+<app-footer></app-footer>

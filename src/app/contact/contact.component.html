@@ -1,7 +1,4 @@
 <app-header></app-header>
-
-<!-- translation: directive (key as content of element) -->
-
 <div class="offcanvas-overlay"></div>
 <div class="breadcrumb-area">
    <div class="container">
@@ -9,8 +6,8 @@
          <div class="col-md-12">
             <div class="breadcrumb-content">
                <ul class="nav">
-                  <li><a routerLink="/" translate>ui.home</a></li>
-                  <li translate>ui.contact</li>
+                  <li><a routerLink="/">{{ "ui.home" | translate }}</a></li>
+                  <li>{{ "ui.contact" | translate }}</li>
                </ul>
             </div>
          </div>
@@ -47,7 +44,7 @@
                   </div>
                </div>
                <div class="contact-social">
-                  <h3 translate>ui.follow</h3>
+                  <h3>{{ "ui.follow" | translate }}</h3>
                   <div class="social-info">
                      <ul>
                         <li>
@@ -67,22 +64,22 @@
          <div class="col-lg-8 col-md-7">
             <div class="contact-form">
                <div class="contact-title mb-30">
-                  <h2 translate>ui.get_in_touch</h2>
+                  <h2>{{ "ui.get_in_touch" | translate }}</h2>
                </div>
                <form class="contact-form-style" id="contact-form" action="assets/php/mail.php" method="post">
                   <div class="row">
                      <div class="col-lg-6">
-                        <input name="name" placeholder="Name*" type="text" />
+                        <input name="name" placeholder='{{ "ui.firstname" | translate }}' type="text" required="true" />
                      </div>
                      <div class="col-lg-6">
-                        <input name="email" placeholder="Email*" type="email" />
+                        <input name="email" placeholder='{{ "ui.email" | translate }}' type="email" required="true" />
                      </div>
                      <div class="col-lg-12">
-                        <input name="subject" placeholder="Subject*" type="text" />
+                        <input name="subject" placeholder='{{ "ui.subject" | translate }}' type="text" required="true" />
                      </div>
                      <div class="col-lg-12">
-                        <textarea name="message" placeholder="Your Message*"></textarea>
-                        <button class="submit" type="submit" translate>ui.send</button>
+                        <textarea name="message" placeholder='{{ "ui.message" | translate }}' required="true"></textarea>
+                        <button class="submit" type="submit">{{ "ui.send" | translate }}</button>
                      </div>
                   </div>
                </form>
