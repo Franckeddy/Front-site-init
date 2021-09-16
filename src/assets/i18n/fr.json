@@ -2,7 +2,7 @@
    "ui": {
       "home": "Accueil",
       "contact": "Contact",
-      "sign_in_to_the_store_or_create_new_account": "Connectez-vous ou créez un compte",
+      "sign_in_to_the_store_or_create_new_account": "Connectez-vous",
       "panel_login": "Connexion à votre compte",
       "email": "Email",
       "enter_email": "Renseigner votre email ...",
@@ -20,6 +20,7 @@
       "logout": "Se déconnecter",
       "pseudo": "Pseudo",
       "account_already": "Vous avez déjà un compte ?",
+      "create_account": "Créer un compte: ",
       "follow": "Suivez-nous",
       "send": "Envoyer",
       "get_in_touch": "Entrer en contact",
