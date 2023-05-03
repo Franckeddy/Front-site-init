@@ -1,7 +1,6 @@
 # Shop
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/494e2b019dd44df4a61501691809df18)](https://app.codacy.com/gh/Franckeddy/Front-site-init?utm_source=github.com&utm_medium=referral&utm_content=Franckeddy/Front-site-init&utm_campaign=Badge_Grade_Settings)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Franckeddy/Front-site-init/badges/quality-score.png?b=develop)](https://scrutinizer-ci.com/g/Franckeddy/Front-site-init/?branch=develop)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.8.
 
